@@ -286,7 +286,7 @@ public class MenubarAppletImpl : Budgie.Applet
         item = create_exec_item("End session...", corrected_icon("system-shutdown-symbolic"));
         item.activate.connect(()=> {
             Idle.add(()=> {
-                Process.spawn_command_line_async("xfce4-sessions-logout --logout");
+                Process.spawn_command_line_async("xfce4-session-logout --logout");
                 return false;
             });
         });
