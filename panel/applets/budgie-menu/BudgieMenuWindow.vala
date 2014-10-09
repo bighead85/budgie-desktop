@@ -10,7 +10,7 @@
  */
 
 const string APPS_ID = "gnome-applications.menu";
-const string LOGOUT_BINARY = "budgie-session-dialog";
+const string LOGOUT_BINARY = "xfce4-session-logout";
 
 /**
  * Factory widget to represent a category
