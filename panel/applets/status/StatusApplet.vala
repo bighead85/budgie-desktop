@@ -119,7 +119,7 @@ public class StatusAppletImpl : Budgie.Applet
         end_session.clicked.connect(()=> {
             popover.hide();
             try {
-                Process.spawn_command_line_async("budgie-session-dialog");
+                Process.spawn_command_line_async("xfce4-session-logout");
             } catch (Error e) {
                 message("Error invoking end session dialog: %s", e.message);
             }
