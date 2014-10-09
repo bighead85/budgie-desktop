@@ -136,6 +136,22 @@ public class StatusAppletImpl : Budgie.Applet
         popover.set_size_request(200, 150);
         popover.present(this);
     }
+    //Battery
+            if (battery.state == 4) {
+                image_name = "battery-full-charged-symbolic";
+        } else if (battery.state == 1) {
+                image_name += "-charging-symbolic";
+        } else {
+                image_name += "-symbolic";
+        }
+
+        // Set a handy tooltip until we gain a menu in StatusApplet
+        string tip = "Battery remaining: %d%%".printf((int)battery.percentage);
+        set_tooltip_text(tip);
+        margin = 2;
+
+        widget.set_from_icon_name(image_name, Gtk.IconSize.INVALID);
+        show_all();
 } // End class
 
 [ModuleInit]
