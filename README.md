@@ -89,6 +89,14 @@ Budgie. I will not support them. (overlay scrollbars and such)
 Lastly, always set --prefix=/usr when using autogen.sh, or configure, otherwise you
 won't be able to start the desktop on most distros
 
-Author
+Original Author
 ===
  * Ikey Doherty <ikey.doherty@gmail.com>
+ * 
+==TO INSTALL
+sudo apt-get install build-essential gnome-common gobject-introspection libglib2.0-dev libgtk-3-dev libpulse-dev libpulse-mainloop-glib0 libmutter-dev libwnck-3-dev libupower-glib-dev libgnome-menu-3-dev libc6-dev
+git clone http://github.com/bighead85/budgie-desktop.git
+cd budgie-desktop
+./autogen.sh
+make 
+sudo make install
