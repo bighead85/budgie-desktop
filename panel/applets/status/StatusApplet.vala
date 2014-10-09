@@ -99,7 +99,7 @@ public class StatusAppletImpl : Budgie.Applet
         label.clicked.connect(()=>{
             popover.hide();
             try {
-                Process.spawn_command_line_async("gnome-control-center");
+                Process.spawn_command_line_async("xfce4-settings-manager");
             } catch (Error e) {
                 message("Error invoking gnome-control-center: %s", e.message);
             }
