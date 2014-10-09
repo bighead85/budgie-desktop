@@ -93,7 +93,9 @@ Original Author
 ===
  * Ikey Doherty <ikey.doherty@gmail.com>
  * 
-==TO INSTALL
+==
+
+TO INSTALL
 sudo apt-get install build-essential gnome-common gobject-introspection libglib2.0-dev libgtk-3-dev libpulse-dev libpulse-mainloop-glib0 libmutter-dev libwnck-3-dev libupower-glib-dev libgnome-menu-3-dev libc6-dev
 git clone http://github.com/bighead85/budgie-desktop.git
 cd budgie-desktop
